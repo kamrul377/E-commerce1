@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{ 
+  scroll-behavior: smooth;
+  font-family: 'Titillium Web', sans-serif;
+  /* background: url('images/patterns.png');
+  background-blend-mode: screen; */
+  background-color: whitesmoke;
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+
+/* .card .img img::before{ 
+  content: "";
+  position: absolute;
+  top: 100;
+  left: 100;
+  width: 100%;
+  height: 100%;
+  box-shadow: black;
+  opacity: 1;
+  transition: opacity 0.3s;
+} */
+.card .img img::after{ 
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(226, 17, 17, 0.938);
+}
