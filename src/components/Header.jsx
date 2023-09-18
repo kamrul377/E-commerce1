@@ -103,7 +103,7 @@ const Header = () => {
     return (
         <>
 
-            <div className='w-full dark:bg-[#2f1f2d] flex justify-between px-10 py-6 items-center'>
+            <div className='w-full  flex justify-between px-10 py-6 items-center'>
                 <div className="logo">
                     <NavLink to={'/'}>
                         <img src="images/eshop.png" alt="" className='w-[100px] bg-blue-950 p-1 rounded shadow cursor-pointer' />

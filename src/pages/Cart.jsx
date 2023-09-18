@@ -19,12 +19,12 @@ const Cart = () => {
       address: "raichata",
       amount: value
     }
-    
-    fetch("http://localhost:3002/api/user/checkout",{ 
-      method: 'post', 
-      headers: {'content-type': "application/json"}, 
+
+    fetch("http://localhost:3002/api/user/checkout", {
+      method: 'post',
+      headers: { 'content-type': "application/json" },
       body: JSON.stringify(data)
-    }).then(res => res.json()).then((result)=> { 
+    }).then(res => res.json()).then((result) => {
       window.location.replace(result.url)
     })
 
@@ -38,8 +38,8 @@ const Cart = () => {
 
     <div className="w-screen bg-[#f9f9f9] bg-fixed" name="cart">
 
-      <div className='w-[95%] sm:w-[80%] mx-auto bg-white dark:bg-slate-900 dark:text-slate-200 p-5 my-3 rounded shadow-inner' >
-        <div className="title uppercase flex justify-between w-full text-slate-700 dark:text-slate-500 font-bold text-center">
+      <div className='w-[95%] sm:w-[80%] mx-auto bg-white p-5 my-3 rounded shadow-inner' >
+        <div className="title uppercase flex justify-between w-full text-slate-700  font-bold text-center">
           <p className='basis-2/6 text-left'>item</p>
           <p className='basis-1/6'>price</p>
           <p className='basis-1/6'>quantity</p>

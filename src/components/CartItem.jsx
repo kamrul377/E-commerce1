@@ -18,20 +18,20 @@ const CartItem = ({ id, image, name, color, amount, price }) => {
         <div className="items flex justify-between items-center first:mt-0 mt-2">
             <div className="item flex justify-start items-center  basis-2/6">
                 <img className='h-16 w-28  rounded shadow ' src={image} alt={image} />
-                <div className="name-color ml-4 text-sm text-slate-700 dark:text-slate-400">
+                <div className="name-color ml-4 text-sm text-slate-700 ">
                     <p>{name} </p>
                     <p className='flex gap-1 items-center'>Color: <button className={`h-4 w-4 rounded-full`} style={{ backgroundColor: color }}>  </button> </p>
                 </div>
             </div>
-            <div className="price basis-1/6 text-center text-sm text-slate-700 dark:text-slate-400">
+            <div className="price basis-1/6 text-center text-sm text-slate-700 ">
                 <p>{<FormatPrice price={price} />}</p>
             </div>
 
             {/* quantity  */}
-            <div className="quantity basis-1/6 text-center text-sm flex justify-center text-slate-700 dark:text-slate-400 gap-4">
-                <button > <BiMinus onClick={() => setDecrement(id)} size={25} color='#000000' className=' dark:bg-slate-500 rounded-sm  active:scale-90' /> </button>
+            <div className="quantity basis-1/6 text-center text-sm flex justify-center text-slate-700  gap-4">
+                <button > <BiMinus onClick={() => setDecrement(id)} size={25} color='#000000' className='  rounded-sm  active:scale-90' /> </button>
                 {amount}
-                <button> <AiOutlinePlus onClick={() => setIncrement(id)} size={25} color='#000000' className=' dark:bg-slate-500 rounded-sm active:scale-90' /> </button>
+                <button> <AiOutlinePlus onClick={() => setIncrement(id)} size={25} color='#000000' className='  rounded-sm active:scale-90' /> </button>
             </div>
 
 

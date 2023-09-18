@@ -42,7 +42,7 @@ const SingleProduct = () => {
 
   return (
 
-    <div className='bg-white dark:bg-[#03001C]'>
+    <div className='bg-white '>
       <BreadCrumbs title={name} />
       {isSingleLoading && <Loader />}
 
@@ -54,7 +54,7 @@ const SingleProduct = () => {
           <div className="image-item">
             <Images images={image} />
           </div>
-          <div className="content-item text-slate-800 dark:text-slate-400 flex flex-col gap-3">
+          <div className="content-item text-slate-800  flex flex-col gap-3">
             <h1 className='text-4xl font-bold'>{name}</h1>
 
             <div className='flex gap-2'>
@@ -63,20 +63,20 @@ const SingleProduct = () => {
             </div>
 
             <p>MRP: <del>{<FormatPrice price={price + 2500} />}</del> </p>
-            <p className='text-purple-800 dark:text-pink-600'>Deal of the day : <b><FormatPrice price={price} /></b> </p>
+            <p className='text-purple-800 '>Deal of the day : <b><FormatPrice price={price} /></b> </p>
             <p className='font-normal'> {description}</p>
             <div className="secure-themes flex gap-1 w-full justify-between my-4">
               {secureTheme.map((items, index) => {
-                return <div key={index} className=' flex flex-col justify-center items-center border-b-2 dark:border-slate-500'>
-                  <span className='bg-white dark:bg-[#ddd] rounded-full p-[2px]'>{items.icon}</span>
-                  <p className='text-[12px] text-slate-700 dark:text-slate-300'>{items.title}</p>
+                return <div key={index} className=' flex flex-col justify-center items-center border-b-2 '>
+                  <span className='bg-white  rounded-full p-[2px]'>{items.icon}</span>
+                  <p className='text-[12px] text-slate-700 '>{items.title}</p>
                 </div>
               })}
             </div>
             <p>Available: <b>{stock > 0 ? "In Stock" : "Not Available"}</b></p>
             <p>Id: <b>{id}</b></p>
             <p>Brand: <b>{company}</b></p>
-            <div className='w-full h-[2px] bg-slate-300 dark:bg-slate-800 my-4'></div>
+            <div className='w-full h-[2px] bg-slate-300  my-4'></div>
 
             {stock > 0 && <AddToCart product={singleProduct} />}
 

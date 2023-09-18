@@ -50,7 +50,7 @@ const AddToCart = ({ product }) => {
     return (
         <div>
             <BasicModal open={open} handleClose={handleClose} />
-            <p className='flex items-center gap-3 dark:bg-slate-800 dark:py-1'>Colors: {colors.map((curColor, index) => {
+            <p className='flex items-center gap-3 '>Colors: {colors.map((curColor, index) => {
                 return <button title={curColor} key={index} style={{ backgroundColor: curColor }} className={`w-[25px] h-[25px] rounded-full text-center leading-[25px] hover:scale-90 ring-offset-2 ring-purple-950 ${curColor === color ? "ring-2" : null}`} onClick={() => setColor(curColor)}> { }  </button>
             })}</p>
 

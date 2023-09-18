@@ -10,8 +10,8 @@ const Footer = () => {
 
             <div className="footer-up my-6 absolute top-[-82px] right-0 w-full shadow">
                 <div className='w-[95%] md:w-[80%] mx-auto'>
-                    <div className='flex justify-between bg-[#f7f7f7] dark:bg-[#570029] py-4 px-10 items-center rounded shadow'>
-                        <div><p className='text-slate-700 dark:text-slate-200'>Ready to get started? <br /> Talk to us today</p></div>
+                    <div className='flex justify-between bg-[#f7f7f7]  py-4 px-10 items-center rounded shadow'>
+                        <div><p className='text-slate-700 '>Ready to get started? <br /> Talk to us today</p></div>
                         <div>
                             <Button> get started</Button>
                         </div>

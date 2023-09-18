@@ -6,7 +6,7 @@ import { FaCanadianMapleLeaf } from 'react-icons/fa'
 
 const Services = () => {
     return (
-        <div className='bg-white dark:bg-[#003646] py-10'>
+        <div className='bg-white  py-10'>
             <div className="services grid sm:grid-cols-3 w-[95%] md:w-[80%] mx-auto gap-4">
                 <div className='bg-[#f7f7f7] flex justify-center items-center flex-col h-[200px] shadow rounded-sm'>
                     <TbTruckDelivery size={45} color='#5C469C' className='bg-white m-2 p-[5px] rounded-full' />

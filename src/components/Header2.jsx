@@ -67,17 +67,17 @@ const Header2 = () => {
         </div>
       </ul>
 
-      {open && <div className="phone-open flex w-full h-screen justify-center items-center bg-gradient-to-b from-black to-slate-900 absolute top-0 left-0 duration-200 z-20">
+      {open && <div className={`phone-open fixed z-40 flex w-full h-screen justify-center items-center bg-gradient-to-b from-black to-slate-900 top-0 left-0 duration-200 md:hidden`}>
         <ul className='text-white flex flex-col gap-5'>
           {tabs && tabs.map((i, index) => {
-            return <li className='text-gray-400 px-4 hover:cursor-pointer hover:scale-105 duration-200 text-center text-2xl'>
+            return <li key={i} className='text-gray-400 px-4 hover:cursor-pointer hover:scale-105 duration-200 text-center text-2xl'>
               <NavLink to={i.link} onClick={() => setOpen(false)}> {i.link} </NavLink>
             </li>
           })}
 
           <button className='block bg-gradient-to-r from-blue-500 to-cyan-500 px-5 py-1 rounded mr-3'> LogIn </button>
 
-          <Link onClick={()=> setOpen(false)} to={'/cart'} className="cart-button md:flex relative cursor-pointer mx-auto">
+          <Link onClick={() => setOpen(false)} to={'/cart'} className="cart-button md:flex relative cursor-pointer mx-auto">
             <FiShoppingCart size={25} title='go to cart' className='' />
             <span className='w-5 h-5 bg-indigo-500 absolute top-[-10px] right-[-16px] rounded-full flex justify-center items-center text-white text-sm animate-bounce'> {cart?.length} </span>
           </Link>

@@ -13,7 +13,7 @@ const CartAmount = ({amount, setIncrement, setDecrement}) => {
             <button onClick={()=> setDecrement()}> <BiMinus size={25}  /> </button>
 
 
-            <div className='text-lg text-slate-900 dark:text-slate-400'>{amount}</div>
+            <div className='text-lg text-slate-900'>{amount}</div>
 
             <button  onClick={()=> setIncrement()}> <GrFormAdd size={25} /> </button>
 

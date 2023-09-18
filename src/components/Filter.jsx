@@ -40,7 +40,7 @@ const Filter = () => {
         <form action="#" onSubmit={(e) => e.preventDefault()}>
           <div className="search w-full relative">
 
-            <input type="text" name="text" id="search" className='outline-none rounded-sm text-sm text-slate-700 px-3 py-[2px] w-full border-purple-600 border-[1px] bg-white dark:bg-slate-500 dark:border-[#ddd]' value={text} onChange={updateFilterValue} />
+            <input type="text" name="text" id="search" className='outline-none rounded-sm text-sm text-slate-700 px-3 py-[2px] w-full border-purple-600 border-[1px] bg-white' value={text} onChange={updateFilterValue} />
 
             <MdManageSearch color='white' className='bg-[#333] p-[2px] absolute top-0 right-0 w-[40px] h-full rounded-tr-sm rounded-br-sm' />
           </div>
