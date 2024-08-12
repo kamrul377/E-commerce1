@@ -3,7 +3,7 @@ import { useCartContext } from '../context/cartContext'
 import CartAmount from '../components/CartAmount'
 
 import CartItem from '../components/CartItem'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import FormatPrice from '../helpers/FormatPrice'
 import axios from 'axios'
 
@@ -73,7 +73,7 @@ const Cart = () => {
         </div>
 
 
-        <div className='bg-gradient-to-r from-blue-500 to-cyan-500 mt-10 p-4 w-[300px] ml-auto rounded shadow flex justify-between'>
+        <div className='bg-gradient-to-r from-blue-500 to-cyan-500 mt-10 p-4 w-[350px] text-white ml-auto rounded shadow flex justify-between'>
 
           {/* 
           <p> Amount {<FormatPrice price={total_price} />} </p>
@@ -83,7 +83,7 @@ const Cart = () => {
             <p>Shipping Fee -----<span>{shiping_free}</span></p>
           </div>
 
-          <button onClick={() => handlePayment(25000)}>Checkout </button>
+          <Link className='bg-blue-600 text-white font-bold px-2 rounded shadow text-center flex items-center' onClick={() => handlePayment(25000)}>Checkout </Link>
         </div>
 
 

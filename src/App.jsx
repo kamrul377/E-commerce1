@@ -19,8 +19,8 @@ import Fail from './payment/Fail'
 const App = () => {
   return (
     <BrowserRouter>
-    {/* <Header /> */}
-    <Header2 />
+      {/* <Header /> */}
+      <Header2 />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/home' element={<Home />} />

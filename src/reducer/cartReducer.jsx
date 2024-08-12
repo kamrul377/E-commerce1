@@ -17,7 +17,7 @@ const cartReducer = (state, action) => {
 
         console.log(existingProduct)
         if (existingProduct) {
-            let updateCart = state.cart.map((item) => {
+            let updateCart = state?.cart.map((item) => {
                 if (item.id === id + color) {
                     let newAmount = item.amount + amount
 
@@ -64,7 +64,7 @@ const cartReducer = (state, action) => {
 
     if (action.type === 'REMOVE_ITEM') {
         const id = action.payload;
-        const newCartItem = state.cart.filter((curItem) => {
+        const newCartItem = state?.cart.filter((curItem) => {
             return curItem.id !== id;
         })
         return {

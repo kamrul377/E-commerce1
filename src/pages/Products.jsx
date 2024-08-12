@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 const Products = () => {
 
-  const [sideBarOpen, setSideBarOpen] = useState(false)
+  // const [sideBarOpen, setSideBarOpen] = useState(false)
 
 
   return (

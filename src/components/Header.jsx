@@ -79,6 +79,7 @@ import { FiShoppingCart } from 'react-icons/fi'
 import { CgClose, CgMenuRightAlt } from 'react-icons/cg'
 import { Link, NavLink } from 'react-router-dom'
 import { useCartContext } from '../context/cartContext'
+import { CgProfile } from "react-icons/cg";
 
 const Header = () => {
 
@@ -125,6 +126,9 @@ const Header = () => {
                             return <li key={i} className='uppercase dark:text-slate-200 hover:text-slate-50 hover:bg-indigo-300 sm:hover:bg-inherit sm:hover:text-slate-900 cursor-pointer my-2 sm:my-0 w-full'> <Link to={item.link}>{item.name}</Link> </li>
                         })}
                         <Button> LogIn </Button>
+
+                   
+
                         <Link to={'/cart'} className="cart-button flex relative cursor-pointer">
                             <FiShoppingCart size={25} title='go to cart' className='' />
                             <span className='w-5 h-5 bg-indigo-500 absolute top-[-10px] right-[-16px] rounded-full flex justify-center items-center text-white text-sm animate-bounce'> {cart?.length} </span>

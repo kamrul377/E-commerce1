@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import Logo from '../assets/eshop.png'
 import { FiShoppingCart } from 'react-icons/fi'
 import { useCartContext } from '../context/cartContext'
+import { CgProfile } from 'react-icons/cg'
 
 const Header2 = () => {
 
@@ -54,7 +55,11 @@ const Header2 = () => {
           })
         }
 
-        <button className='hidden md:block bg-gradient-to-r from-blue-500 to-cyan-500 px-5 py-1 rounded mr-3'> LogIn </button>
+        {/* <button className='hidden md:block bg-gradient-to-r from-blue-500 to-cyan-500 px-5 py-1 rounded mr-3'> LogIn </button> */}
+
+        <Link className="method mx-3">
+          <CgProfile size={25} title="profile" />
+        </Link>
 
         <Link to={'/cart'} className="cart-button md:flex relative cursor-pointer hidden">
           <FiShoppingCart size={25} title='go to cart' className='' />
@@ -75,7 +80,7 @@ const Header2 = () => {
             </li>
           })}
 
-          <button className='block bg-gradient-to-r from-blue-500 to-cyan-500 px-5 py-1 rounded mr-3'> LogIn </button>
+          {/* <button className='block bg-gradient-to-r from-blue-500 to-cyan-500 px-5 py-1 rounded mr-3'> LogIn </button> */}
 
           <Link onClick={() => setOpen(false)} to={'/cart'} className="cart-button md:flex relative cursor-pointer mx-auto">
             <FiShoppingCart size={25} title='go to cart' className='' />

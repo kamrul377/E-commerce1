@@ -31,6 +31,7 @@ const Filter = () => {
 
 
   const [colors, setColors] = useState(colorsData[0]);
+  const [openCat,setOpenCat] = useState(null)
   // console.log(color)
 
 
@@ -51,12 +52,12 @@ const Filter = () => {
           <h1 className='text-2xl my-2'> Category</h1>
           <div className="category-list flex flex-col gap-2 items-start">
             {categoryName.map((item, i) => {
-              return <button key={i} className='text-slate-700 capitalize hover:border-b-[2px] border-indigo-400 hover:pl-2 duration-300 text-sm'
+              return <NavLink  key={i} className='text-slate-700 capitalize hover:border-l-[2px] border-indigo-400 hover:pl-2 duration-300 text-sm'
                 type='button'
                 name='category'
                 value={item}
                 onClick={updateFilterValue}>
-                {item}</button>
+                {item}</NavLink>
             })}
           </div>
         </div>
