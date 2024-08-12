@@ -38,7 +38,7 @@ const Filter = () => {
   return (
     <div>
       <div className="filter">
-        <form action="#" onSubmit={(e) => e.preventDefault()}>
+        <form onSubmit={(e) => e.preventDefault()}>
           <div className="search w-full relative">
 
             <input type="text" name="text" id="search" className='outline-none rounded-sm text-sm text-slate-700 px-3 py-[2px] w-full border-purple-600 border-[1px] bg-white' value={text} onChange={updateFilterValue} />
